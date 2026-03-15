@@ -1,0 +1,8 @@
+change version
+change code
+cd path to folder
+npx . for local tests
+npm login if needed
+npm publish
+
+
