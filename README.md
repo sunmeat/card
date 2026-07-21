@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://sunmeat.site">sunmeat.site</a> •
+  <a href="https://sunmeat.shop">sunmeat.shop</a> •
   <a href="https://github.com/sunmeat">GitHub</a> •
   <a href="https://www.linkedin.com/in/sunmeat/">LinkedIn</a>
 </p>
