@@ -1,8 +1,11 @@
-change version
-change code
-cd path to folder
-npx . for local tests
-npm login if needed
+клонувати репозиторій 
+
+змінити версію на 1.0.7 в package.json
+
+внести необхідні правки в код
+
+npm login
+
 npm publish
 
-
+оновити репозиторій
