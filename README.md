@@ -14,10 +14,10 @@
 </p>
 
 <p align="center">
-  <a href="https://sunmeat.shop">sunmeat.shop</a> •
-  <a href="https://github.com/sunmeat">GitHub</a> •
-  <a href="https://www.linkedin.com/in/sunmeat/">LinkedIn</a> •
-  <a href="https://www.npmjs.com/package/sunmeat">npm</a>
+  <a href="https://sunmeat.shop" target="_blank" rel="noopener noreferrer">sunmeat.shop</a> •
+  <a href="https://github.com/sunmeat" target="_blank" rel="noopener noreferrer">GitHub</a> •
+  <a href="https://www.linkedin.com/in/sunmeat/" target="_blank" rel="noopener noreferrer">LinkedIn</a> •
+  <a href="https://www.npmjs.com/package/sunmeat" target="_blank" rel="noopener noreferrer">npm</a>
 </p>
 
 ---
