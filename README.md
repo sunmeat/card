@@ -10,7 +10,7 @@
 
 <p align="center">
   My interactive digital business card right in your terminal<br>
-  <strong>Oleksandr Zahoruiko</strong> · Software Engineer · Lecturer · Odesa, Ukraine
+  <strong>Oleksandr Zahoruiko</strong> · Software Engineer · Lecturer · Orléans, France
 </p>
 
 <p align="center">
@@ -61,18 +61,20 @@ Want it even faster? Add an alias:
 
 ```bash
 # In ~/.zshrc or ~/.bashrc
-alias me='npx sunmeat'
+alias alex='npx sunmeat'
 ```
 
-Now just type `me` anytime.
+Now just type `alex` anytime.
 
 ### Tech Stack (inside the card)
 
 ```text
-Languages ──────── C++, C#, JavaScript, SQL, Java, Python, PHP, Kotlin
-Frameworks ─────── ASP.NET Core, React, Angular, Electron, Spring, Django, Node.js
-Mobile ─────────── Android (Java/Kotlin), .NET MAUI
-Tools ──────────── Git, Docker, VS Code, Rider, IntelliJ, PostgreSQL, MySQL, MongoDB
+Core teaching domains:
+- Procedural & Object-Oriented Programming (C++, C#, Java, Python, JS/TS, PHP, Kotlin)
+- Full-stack Web Development (React + ASP.NET Core / Node.js / Django / Spring Boot)
+- Mobile Development (Android, .NET MAUI)
+- Database Design & SQL (MS SQL Server, MySQL, Oracle, Firebase, PostgreSQL, SQLite)
+- Engineering Practices: Agile/Scrum, Code Reviews, Clean Architecture
 ```
 
 ### Want your own npx card?
@@ -83,8 +85,8 @@ Tools ──────────── Git, Docker, VS Code, Rider, IntelliJ
 4. `npm publish` under your own scope or name  
 5. Enjoy: `npx your-username`
 
-Made with ❤️ in Odesa, Ukraine  
+Made with ❤️ in Orléans, France  
 
 <p align="center">
-  <sub>Last updated: March 2026</sub>
+  <sub>Last updated: August 2026</sub>
 </p>
