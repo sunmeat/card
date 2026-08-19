@@ -53,7 +53,7 @@ function wrapText(text, maxWidth) {
 }
 
 const profile = {
-  website:  "http://sunmeat.site/",
+  website:  "http://sunmeat.shop/",
   linkedin: "https://www.linkedin.com/in/sunmeat/",
   github:   "https://github.com/sunmeat",
   npx:      "npx sunmeat@latest",
@@ -70,22 +70,37 @@ const languages = [
   { name: "Kotlin",     level: 12, label: "Android"               },
 ];
 
-const frameworks = {
-  backend:  ["ASP.NET Core", "EF Core", "Dapper", "Spring", "Django", "Node.js"],
-  frontend: ["React", "Angular", "Electron.js"],
-  mobile:   ["Java Android", "Kotlin Android", "MAUI"],
+const skills = {
+  mobile: [
+    "Jetpack Compose",
+    "Material Design",
+    "MAUI",
+    "MVI / MVVM"
+  ],
+  frameworks: [
+    "ASP.NET Core",
+    "Spring Boot",
+    "Django",
+    "Node.js",
+    "React"
+  ],
+  tooling: [
+    "Git & GitHub",
+    "Docker",
+    "CI/CD",
+    "Figma",
+    "AI Ecosystem"
+  ]
 };
-
-const devtools = ["Git", "Docker", "VS Code", "Rider", "IntelliJ IDEA", "PostgreSQL", "MySQL", "MongoDB"];
 
 const hobbies = [
   { icon: "🎹", name: "Music",           detail: "accordion, piano, melodica, sopilka, flute, kalimba, ukulele, guitar" },
   { icon: "🎤", name: "Karaoke",         detail: "syntax errors don't exist in song"                                    },
   { icon: "📷", name: "Photography",     detail: "Carpathians, Bulgaria, Amsterdam - through the lens"                 },
   { icon: "🌿", name: "Gardening",       detail: "same patience as debugging, more butterflies"                        },
-  { icon: "🎲", name: "Board Games",     detail: "Munchkin - playing like a Boss"                                      },
+  { icon: "🎲", name: "Board Games",     detail: "Munchkin - playing like a Boss. Elo: 1150+"                                      },
   { icon: "🎨", name: "Acrylic Paint",   detail: "creative chaos, proudly committed to every stroke"                  },
-  { icon: "✈️",  name: "Travel",          detail: "waiting for Ukraine's victory to explore the world again"           },
+  { icon: "✈️",  name: "Travel",          detail: "the highlight of my life" },
 ];
 
 const quotes = [
@@ -161,11 +176,11 @@ function showWelcome() {
     "",
     hi("Oleksandr Zahoruiko") + "   " + dim("·") + "   " + accent("@sunmeat"),
     steel("Engineer  ·  Lecturer  ·  Developer"),
-    dim("Odesa, Ukraine  ·  IT Academy Step  ·  since 2007"),
+    dim("Orléans, France"),
     "",
     dim("┄".repeat(36)),
     "",
-    dim("web      →  ") + muted("sunmeat.site"),
+    dim("web      →  ") + muted("sunmeat.shop"),
     dim("github   →  ") + muted("github.com/sunmeat"),
     dim("linkedin →  ") + muted("linkedin.com/in/sunmeat"),
     "",
@@ -185,13 +200,16 @@ function showAbout() {
 
   const content = [
     hi("Oleksandr Zahoruiko"),
-    steel("Age 37   ·   Odesa, Ukraine   ·   since 2007"),
+    steel("Age 37   ·   Orléans, France"),
     "",
     dim("┄".repeat(48)),
     "",
-    soft("Educator, lecturer, and software engineer."),
-    soft("Graduated with honours in 2010 (Economics & Programming)."),
-    soft("Leading Teacher Specialist at IT Academy Step."),
+
+    soft("Software Engineer & Lecturer specializing in Web "),
+    soft("& Mobile Development. For nearly two decades"),
+    soft("I have been designing and delivering practical courses"),
+    soft("that bridge academic knowledge with real-world"),
+    soft("software engineering practices."),
     "",
     soft("I genuinely love what I do - teaching isn't just a job,"),
     soft("it's the way I make sense of the world."),
@@ -201,9 +219,7 @@ function showAbout() {
     dim("[") + teal("personality") + dim("]"),
     dim("engaging · responsible · optimistic · creative · friendly"),
     "",
-    dim("[") + teal("currently") + dim("]"),
-    warn("Waiting for Ukraine's victory and open borders."),
-    dim("Travel is one of my greatest passions."),
+    warn("Il y a des fleurs partout pour qui veut bien les voir."),
   ].join("\n");
 
   console.log(bx(content, "#5BB0F7", " About Me "));
@@ -225,13 +241,12 @@ function showSkills() {
   const fmtList = (arr) => arr.map((x) => teal(x)).join(dot);
 
   const fwLines = [
-    hi("Backend ") + dim("  ·  ") + fmtList(frameworks.backend),
+    hi("Mobile ") + dim("  ·  ") + fmtList(skills.mobile),
     "",
-    hi("Frontend") + dim("  ·  ") + fmtList(frameworks.frontend),
+    hi("Frameworks ") + dim("  ·  ") + fmtList(skills.frameworks),
     "",
-    hi("Mobile  ") + dim("  ·  ") + fmtList(frameworks.mobile),
+    hi("Tools  ") + dim("  ·  ") + fmtList(skills.tooling),
     "",
-    hi("Tools   ") + dim("  ·  ") + fmtList(devtools),
   ].join("\n");
 
   console.log(bx(fwLines, "#2dd4bf", " Frameworks & Tools "));
@@ -273,11 +288,11 @@ async function showContact() {
   cls();
 
   process.stdout.write("\n  " + dim("opening browser...  "));
-  await typewrite(accent("sunmeat.site"), 22);
+  await typewrite(accent("sunmeat.shop"), 22);
   console.log();
 
   const content = [
-    ok("web     ") + "  " + muted("http://sunmeat.site/"),
+    ok("web     ") + "  " + muted("http://sunmeat.shop/"),
     ok("github  ") + "  " + muted("https://github.com/sunmeat"),
     ok("linkedin") + "  " + muted("https://www.linkedin.com/in/sunmeat/"),
     "",
@@ -290,16 +305,16 @@ async function showContact() {
 
   try {
     const { exec } = require("child_process");
-    const url = "http://sunmeat.site/";
+    const url = "http://sunmeat.shop/";
     const cmd = process.platform === "win32"
       ? `start "" "${url}"`
       : process.platform === "darwin"
         ? `open "${url}"`
         : `xdg-open "${url}"`;
     exec(cmd);
-    console.log("  " + ok("Opened: ") + muted("http://sunmeat.site/") + "\n");
+    console.log("  " + ok("Opened: ") + muted("http://sunmeat.shop/") + "\n");
   } catch (_) {
-    console.log("  " + dim("Visit: ") + muted("http://sunmeat.site/") + "\n");
+    console.log("  " + dim("Visit: ") + muted("http://sunmeat.shop/") + "\n");
   }
 }
 
