@@ -16,7 +16,8 @@
 <p align="center">
   <a href="https://sunmeat.shop">sunmeat.shop</a> •
   <a href="https://github.com/sunmeat">GitHub</a> •
-  <a href="https://www.linkedin.com/in/sunmeat/">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/sunmeat/">LinkedIn</a> •
+  <a href="https://www.npmjs.com/package/sunmeat">npm</a>
 </p>
 
 ---
